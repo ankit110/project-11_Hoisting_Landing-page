@@ -84,16 +84,31 @@ body {
     white-space: nowrap;
 }
 
-.navbar>i {
+.navbar>details {
     display: none;
 }
 
 @media (max-width: 900px) {
-    .navbar>i {
+    .navbar>details {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: 1.5em;
+        margin-top: 1em;
+    }
+
+    details>summary {
+        margin-bottom: 1em;
+    }
+
+    details>.detail {
+        margin-bottom: 0.8em;
+        color: #646161;
+    }
+
+    .navbar>button {
+        display: flex;
+        align-self: baseline;
     }
 
     .list-items {
@@ -1077,11 +1092,13 @@ button:hover {
 }
 
 .footer-logo>p {
-    width: 80%;
+    width: 85%;
+    color: #646161;
 }
 
 .menu {
-    margin-right: 2em;
+    margin-right: 2.5em;
+    
 }
 
 .menu-items {
@@ -1093,6 +1110,7 @@ button:hover {
 .menu-item {
     margin-bottom: 1em;
     white-space: nowrap;
+    color: #646161;
 }
 
 .menuhead {
@@ -1112,3 +1130,15 @@ button:hover {
     margin-right: 0.8em;
 }
 
+
+@media (max-width: 1000px) {
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 2em;
+    }
+}
